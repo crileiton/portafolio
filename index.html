@@ -7,68 +7,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portafolio Cristian Leiton Valencia</title>
+  <link rel="icon" type="image/png" href="./images/favicon.png">
 </head>
 
 <body>
   <!--Etiqueta dedicada a las cabeceras-->
   <header>
-    <!--Etiqueta para menú de navegación-->
-    <nav>
-      <!--Listas ordenadas-->
-      <ol>
-        <!--Item de lista-->
-        <li>
-          <!--Enlaces a una página externa o interna-->
-          <a href="">Portafolio</a>
-        </li>
-        <li>
-          <!--Enlaces a una página externa o interna-->
-          <a href="">Experiencia</a>
-        </li>
-        <li>
-          <!--Enlaces a una página externa o interna-->
-          <a href="">Trabajemos juntos</a>
-        </li>
-      </ol>
-      <!--Listas desordenadas-->
-      <ul></ul>
-    </nav>
+    <!--Div para header-->
+    <div>
+      <figure>
+        <img src="images/logo.png" alt="Logo de Portafolio" />
+      </figure>
+      <!--Etiqueta para menú de navegación-->
+      <nav>
+        <!--Listas ordenadas-->
+        <ol>
+          <!--Item de lista-->
+          <li>
+            <!--Enlaces a una página externa o interna-->
+            <a href="https://crileiton.me">Portafolio</a>
+          </li>
+          <li>
+            <!--Enlaces a una página externa o interna-->
+            <a href="#eventos">Experiencia</a>
+          </li>
+          <li>
+            <!--Enlaces a una página externa o interna-->
+            <a href="#contacto">Trabajemos juntos</a>
+          </li>
+          <li>
+            <a href="../pdfs/reporte2-05-10.pdf" download="Reporte2Mayo2010">
+              Descargar Archivo
+            </a>
+          </li>
+        </ol>
+        <!--Listas desordenadas-->
+        <ul></ul>
+      </nav>
+    </div>
   </header>
   <!--Etiqueta dedicada cada sección: Principal, proyectos, experiencia, contacto, footer -->
   <section>
     <h1>
-      Hola! Soy <strong>Cristian Leiton Valencia</strong> <br> Apasionado por la <strong>programación</strong> <br> y la
-      tecnología <strong>web</strong>
+      Hola! Soy <strong>Cristian Leiton</strong> Desarrollador <br /> <strong>Javascript</strong> con <br> pasión por
+      la <strong>enseñanza</strong>
     </h1>
-    <img src="" alt="">Imagen de portada
+    <img src="./images/hero.jpg" alt="Imagen de portada" width="500" height="400">
   </section>
-  <section>
+  <section id="portafolio">
     <h2>Portafolio (proyectos destacados)</h2>
     <article>
-      <h3>usado.com.co</h3>
-      <h6>Ecommerce / WordPress / WooCommerce</h6>
-      <p><small><strong>Fecha: </strong> 01/03/2019</small></p>
-      <p><small><strong>Puedes verlo en: </strong><a href="https://www.usado.com.co"
-            target="_blank">https://www.usado.com.co</a></small></p>
-      <p>usado.com.co es una tienda virtual dedicada a comercializar productos de segunda mano en la ciudad de Pasto,
-        el emprendimiento nace en el proyecto de empleabilidad y emprendimiento digital, usado.com.co
-        fue realizado por Cristian Leiton Valencia el cual forma parte del emprendimiento SOTECNAR.
+      <h3>Platzi Video</h3>
+      <h6>React Native / React</h6>
+      <p><small><strong>Fecha: </strong> 01/07/2018</small></p>
+      <p><small><strong>Puedes verlo en: </strong><a href="https://www.platzi.com/native"
+            target="_blank">https://www.platzi.com/native</a></small></p>
+      <p>Platzi Video fue el resultado de 3 meses de trabajo
+        para crear la mejor app para enseñar el funcionamiento
+        de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha
+        sido el ejemplo de futuros creadores de aplicaciones multiplataforma
       </p>
+      <img src="./images/platzi-video-react-native.png" alt="Imagen de proyecto react native" width="500">
     </article>
   </section>
-  <section>
+  <section id="eventos">
     <h2>Más sobre mi experiencia</h2>
     <article>
       <figure>
-        <img>
+        <img src="./images/platzi-conf.jpg" alt="Imagen de platziconf" width="500" height="400">
       </figure>
       <h3>PlatziConf México 2018</h3>
       <p>El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto como tener una
         vida de constante aprendizaje.</p>
-        <a>Ver Plática</a>
+      <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
     </article>
   </section>
-  <section>Sección Contacto</section>
+  <section id="contacto">
+    <form action="/suscripcion/">
+      <h3>¿Creamos algo juntos?</h3>
+      <input type="email" placeholder="Déjame tu email">
+      <button>Enviar</button>
+    </form>
+  </section>
   <!--Etiqueta dedicada al footer-->
   <footer>Footer</footer>
 </body>
